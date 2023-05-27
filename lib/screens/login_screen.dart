@@ -76,9 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   GestureDetector(
                     onTap: () async {
-                      if (phoneController.text.length == 10 &&
-                              phoneController.text == "9090909090" ||
-                          phoneController.text == "8888888888") {
+                      if (phoneController.text.length == 10) {
                         setState(() {
                           isLoading = true;
                         });
